@@ -9,6 +9,14 @@
 # Todo lo que deba estar privado debe ser precedido por __, por ende, será imposible de 
 # acceder desde el exterior de la clase.
 
+# La encapsulación es el ocultamiento de datos del estado interno para proteger la 
+# integridad del objeto. Ejemplo: 
+class Cliente: # clase
+    def __init__(self):
+        self.__nroDeCuenta=1234 # variable nroDeCuenta -> encasulada
+    
+    def getNroDeCuenta(self):
+        return self.__nroDeCuenta
 
 
 
