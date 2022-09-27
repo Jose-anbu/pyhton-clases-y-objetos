@@ -18,6 +18,18 @@ class Cliente: # clase
     def getNroDeCuenta(self):
         return self.__nroDeCuenta
 
+# El ocultamiento al acceso a los métodos se realiza de la misma forma, es decir, se 
+# coloca delante del nombre del método "__". Ejemplo:
+class Cliente:
+    def __init__(self):
+        self.__nroDeCuenta=1234
+
+    def __procesoDeCuenta(self):
+        print('Procesando...')
+
+    def getNroDeCuenta(self):
+        return self.__nroDeCuenta
+
 
 
 
