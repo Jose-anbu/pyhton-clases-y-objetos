@@ -30,19 +30,3 @@ class Cliente:
     def getNroDeCuenta(self):
         return self.__nroDeCuenta
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
