@@ -129,12 +129,3 @@ print(f'Es un: {mi_perro.especie}')
 mi_perro.ladra()
 mi_perro.camina(10)
 
-
-
-
-
-
-
-
-
-

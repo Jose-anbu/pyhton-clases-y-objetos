@@ -53,7 +53,3 @@ emp1=Sueldo.Empleado('Nico','Profesor')
 print(f'RESTULTADO 1: {s1}')
 print(f'RESTULTADO 2: {emp1}')
 
-
-
-
-
