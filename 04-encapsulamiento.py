@@ -24,25 +24,9 @@ class Cliente:
     def __init__(self):
         self.__nroDeCuenta=1234
 
-    def __procesoDeCuenta(self):
+    def __procesoDeCuenta__(self):
         print('Procesando...')
 
     def getNroDeCuenta(self):
         return self.__nroDeCuenta
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
