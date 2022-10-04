@@ -101,31 +101,31 @@
 # andar.
 # Se puede definir un método con def y el nombre, y entre los () colocar los parámetros de 
 # entrada que recibe, donde siempre tendrá que estar self primero.
-class Perro:
-    # Atributos de clase
-    especie = 'Mamífero'
+# class Perro:
+#     # Atributos de clase
+#     especie = 'Mamífero'
 
-    # Constructor de la clase
-    def __init__(self,nombre,raza):
+#     # Constructor de la clase
+#     def __init__(self,nombre,raza):
 
-        # Atributos de la instancia
-        self.nombre = nombre
-        self.raza = raza
+#         # Atributos de la instancia
+#         self.nombre = nombre
+#         self.raza = raza
     
-    # Definición de otros métodos
-    def ladra(self):
-        # print('Guau')
-        print('Este perro ha ladrado :( \nEstá enojado')
+#     # Definición de otros métodos
+#     def ladra(self):
+#         # print('Guau')
+#         print('Este perro ha ladrado :( \nEstá enojado')
 
-    def camina(self,pasos):
-        print(f'Este perro ha caminado {pasos} pasos')
+#     def camina(self,pasos):
+#         print(f'Este perro ha caminado {pasos} pasos')
 
-# Si creamos un objeto mi_perro, se podrá hacer uso de sus métodos llamándolos con '.' y el
-# nombre del método. Como si de una función se tratase, pueden recibir y devolver argumentos.
-mi_perro = Perro('Pussi','Caniche')
-print(f'Su nombre es: {mi_perro.nombre}')
-print(f'Su raza es: {mi_perro.raza}')
-print(f'Es un: {mi_perro.especie}')
-mi_perro.ladra()
-mi_perro.camina(10)
+# # Si creamos un objeto mi_perro, se podrá hacer uso de sus métodos llamándolos con '.' y el
+# # nombre del método. Como si de una función se tratase, pueden recibir y devolver argumentos.
+# mi_perro = Perro('Pussi','Caniche')
+# print(f'Su nombre es: {mi_perro.nombre}')
+# print(f'Su raza es: {mi_perro.raza}')
+# print(f'Es un: {mi_perro.especie}')
+# mi_perro.ladra()
+# mi_perro.camina(10)
 
