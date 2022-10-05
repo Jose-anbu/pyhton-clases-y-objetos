@@ -78,6 +78,57 @@
 #     print(vec)
 
 """ CLASES ANIDADAS """
+# class Perro():
+
+#     num_patas=4
+
+#     def __init__(self,nombre,raza,edad):
+#         self.nombre=nombre
+#         self.raza=raza
+#         self.edad=edad
+
+#     def ladrar(self,cant):
+#         return 'guau '*cant
+
+#     def __str__(self):
+#         return f'{self.raza} de {self.edad} años'
+# class Persona():
+
+#     especie='Humano'
+#     cant_cerebro=1
+
+#     def __init__(self,nombre,apellido,edad,meta,perro):
+#         self.nombre=nombre
+#         self.apellido=apellido
+#         self.edad=edad
+#         self.meta=meta
+#         self.perro=perro
+    
+#     def saluda(self):
+#         return f'Hola me llamo {self.nombre} {self.apellido} y tengo {self.edad} años'
+    
+#     def camina(self,pasos):
+#         if(pasos > self.meta):
+#             return 'Felicidades! cumpliste tu meta'
+#         else:
+#             return 'No lograste tu meta, ponete las pilas'
+
+#     def __str__(self):
+#         return f'Soy {self.nombre}, y tengo un {self.perro}'
+
+# perro1=Perro('Cachito','Caniche',3)
+# perro2=Perro('Pepito','Dalmata',1)
+
+# persona1=Persona('Lionel','Messi',34,1000,perro1)
+# persona2=Persona('Mauricio','Cuello',31,5000,perro2)
+
+# # print(persona1.camina(2000))
+# # print(persona2.camina(2000))
+# print(persona1)
+
+""" ENCAPSULAMIENTO """
+""" _ -> las clases que heredan de la clase que tiene el _ van a poder acceder a dicha propiedad. """
+""" __ -> las clases que heredan tampoco podrán acceder a dicha propiedad. """
 class Perro():
 
     num_patas=4
@@ -100,18 +151,24 @@ class Persona():
     def __init__(self,nombre,apellido,edad,meta,perro):
         self.nombre=nombre
         self.apellido=apellido
-        self.edad=edad
+        self.__edad=edad
         self.meta=meta
         self.perro=perro
     
     def saluda(self):
-        return f'Hola me llamo {self.nombre} {self.apellido} y tengo {self.edad} años'
+        return f'Hola me llamo {self.nombre} {self.apellido} y tengo {self.__edad} años'
     
     def camina(self,pasos):
         if(pasos > self.meta):
             return 'Felicidades! cumpliste tu meta'
         else:
             return 'No lograste tu meta, ponete las pilas'
+
+    def cumple_anio(self): # Método que permite el incremento de __edad en 1
+        self.__edad+=1
+
+    def get_edad(self):
+        return f'Tengo {self.__edad} años'
 
     def __str__(self):
         return f'Soy {self.nombre}, y tengo un {self.perro}'
@@ -122,6 +179,9 @@ perro2=Perro('Pepito','Dalmata',1)
 persona1=Persona('Lionel','Messi',34,1000,perro1)
 persona2=Persona('Mauricio','Cuello',31,5000,perro2)
 
-# print(persona1.camina(2000))
-# print(persona2.camina(2000))
-print(persona1)
+print(persona1.saluda())
+persona1.cumple_anio()
+print(persona1.saluda())
+
+print(persona1.get_edad())
+# print(persona1._Persona__edad)
